@@ -1,0 +1,116 @@
+\documentclass[a4paper]{article}
+\usepackage{datetime}
+\newdate{date}{13}{09}{2022}
+\date{\displaydate{date}}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{notes2bib}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Week 3 Assignment-Journal}
+\author{Dustin J. Trujillo}
+
+\begin{document}
+\maketitle
+
+%%\begin{abstract}
+%%To be added later.
+%%\end{abstract}
+
+\section{Part 1: 'Denial of Service' Research Direction}
+My initial research direction/query is "denial of service" AND survey. I searched Google Scholar for the past six years (2017-2022). I broke up my search into year by year for each of these years and quickly browsed/scanned for any result that appeared to be a survey paper and was relevant to my research direction. As you can see from the bibliography (it includes papers that I cited here as well as the papers I did not cite), I found quite a few (48 in total) surveys related to Denial of Service that were published during this six year period.
+
+\section{Part 2: Search and Survey Results}
+Of the 48 survey papers, I critically/creatively read four of them \cite{mahjabin2017survey, saif2018review, salim2020distributed, rios2022detection}, and put short notes for each of them. Below are the notes  from my critical and creative reads and to the highest and lowest cited reasons: \\
+
+This paper \cite{mahjabin2017survey} is from 2017 is the highest cited paper (with 229 citations) of all the surveys (2017-2022). I believe it is the highest cited paper in part, because it also one of the oldest papers in the search period, but also because the paper is more than just a summary: it compares and contrasts others, has a theme and a goal, helps organize ideas, and the authors also add additional and new insights. \\
+
+Here are my raw notes from \cite{mahjabin2017survey}:\\
+\input{C&CDDoSAttackPrevMit} 
+\\
+
+This paper \cite{saif2018review} is from 2018 and is the lowest cited paper (with one citation) of all the surveys (2017-2022). I believe it is the lowest cited paper because it just summarizes some of the literature and does not compare of contrast. The topic (transport layer) may also be too narrow and not very interesting to the larger community. Additionally, this paper may have been shortened as it appears to have been from a conference and is only five pages long. \\
+
+Here are my raw notes from \cite{saif2018review}:\\
+\input{C&C Read Trends and Transport Layer}\\
+
+Here are my raw notes from \cite{salim2020distributed}:\\
+\input{DDoSIOTCLOUD}\\
+
+Here are my raw notes from \cite{rios2022detection}:\\
+\input{C&C Read Low Rate DoD attacks}
+
+\section{Part 3: Topic Map}
+As mentioned previously, in the bibliography I listed all the relevant Denial of Service surveys that were published during 2017-2022. I began my Topic Map by scanning all of the 48 surveys to get a "lay of the land" for all the different sub areas of Denial of Service. See Figure 1 for the Denial of Service Topic Map.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Denial_of_Service_DoS.pdf}
+\caption{\label{fig:DOS}Denial of Service Topic Map}
+\end{figure}
+
+ As you can see from Figure 1, all major sub areas of the 48 survey papers are noted/listed by year. However, you will see one area in 2017 (DDoS Attack, Prevention, Mitigation), one in 2018 (transport Layer), one in 2020 (DDoS attacks and Defenses for IoT on CLOUD layer), and one in 2022 (Detect and Mitigate Low Rate Attacks), where I continued breaking out the topic areas. These four areas are also areas from the four surveys that I did the critical/creative read on. What's more, drom these four surveys, I notated the red Xs on the topic map to indicate items to avoid when developing my own survey paper, and the yellow stars to indicate gaps in existing surveys and possible areas for future research/surveys.
+
+\section{Part 4: Public git-repo}
+
+Make your overleaf latex file into a public git-repo and include a link to the repo in the journal. 
+
+%Additionally, see Figure 3 for two additional good papers: %\cite{davis2021peek} and \cite{moura2021tsuname}. I found these two papers %by first selecting 'related articles' from the \cite{abhishta2019measuring} 
+
+%\subsection{Five Papers with Description}
+
+%%Comments can be added to your project by clicking on the Review menu in the toolbar above. To reply to a comment, simply click the reply button in the lower right corner of the comment, and you can close them when you're done.
+
+%%\subsection{How to add Tables}
+
+%%Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. 
+
+%%\begin{table}
+%%\centering
+%%\begin{tabular}{l|r}
+%%Item & Quantity \\\hline
+%%Widgets & 42 \\
+%%Gadgets & 13
+%%\end{tabular}
+%%\caption{\label{tab:widgets}An example table.}
+%%\end{table}
+
+%%\subsection{How to write Mathematics}
+
+%%\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+%%\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+%%      = \frac{1}{n}\sum_{i}^{n} X_i\]
+%%denote their mean. Then as $n$ approaches infinity, the %%random variables $\sqrt{n}(S_n - \mu)$ converge in %%distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+%%\subsection{How to add Lists}
+
+%%You can make lists with automatic numbering \dots
+
+%%\begin{enumerate}
+%%\item Like this,
+%%\item and like this.
+%%\end{enumerate}
+%%\dots or bullet points \dots
+%%\begin{itemize}
+%%\item Like this,
+%%\item and like this.
+%%\end{itemize}
+
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{w3bibliography.bib}
+
+\end{document}
